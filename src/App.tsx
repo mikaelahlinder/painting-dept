@@ -11,6 +11,10 @@ const Container = styled.div`
   height: 100vh;
   font-family: 'Baskervville', serif;
   font-weight: normal;
+  @media (max-width: 420px) {
+    padding: 0 50px;
+    padding-top: 40px;
+  }
 `
 
 const Logo = styled.h1`
@@ -30,6 +34,10 @@ const Image = styled.div`
   margin: 0 auto;
   margin-top: 20px;
   background-image: url(${welcome});
+  @media (max-width: 420px) {
+    min-height: 370px;
+    background-size: 500px;
+  }
 `
 
 const Heading2 = styled.h2`
@@ -40,6 +48,10 @@ const Heading2 = styled.h2`
   padding: 0;
   padding-top: 50px;
   margin-left: 20px;
+  @media (max-width: 420px) {
+    font-size: 30px;
+    margin-left: 10px;
+  }
 `
 const Heading3 = styled.h3`
   background-color: #fff;
@@ -49,16 +61,25 @@ const Heading3 = styled.h3`
   padding-right: 40px;
   padding-left: 10px;
   margin-left: 20px;
+  @media (max-width: 420px) {
+    margin-left: 10px;
+  }
 `
 
 const Info = styled.div`
   text-align: center;
   font-size: 18px;
   padding-top: 20px;
+  @media (max-width: 420px) {
+    font-size: 14px;
+  }
 `
 
 const Paragraph = styled.p`
   margin: 10px 0;
+  @media (max-width: 420px) {
+    margin: 8px 0;
+  }
 `
 
 function App() {
@@ -67,7 +88,7 @@ function App() {
       <Logo>PAINTING DEPT.</Logo>
       <Image>
         <Heading2>Rich, textured art</Heading2>
-        <Heading3>Launching Novmeber</Heading3>
+        <Heading3>Launching November</Heading3>
       </Image>
       <Info>
         <Paragraph>Stay informed about new available artwork</Paragraph>
@@ -78,7 +99,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={ig} alt="" width={40} />
+          <img src={ig} alt="" width={30} />
         </a>
       </Info>
     </Container>
