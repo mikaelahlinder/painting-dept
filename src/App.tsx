@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import welcome from './welcome.jpg'
 import ig from './instagram-logo.png'
+import welcome from './welcome.jpg'
 
 const Container = styled.div`
   background-color: #eeede9;
@@ -92,7 +92,6 @@ function App() {
       </Image>
       <Info>
         <Paragraph>Stay informed about new available artwork</Paragraph>
-
         <Paragraph>Inspiration and the creative process:</Paragraph>
         <a
           href="https://www.instagram.com/paintingdept/"
