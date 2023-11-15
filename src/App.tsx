@@ -91,7 +91,6 @@ function App() {
         <Heading3>Launching November</Heading3>
       </Image>
       <Info>
-        <Paragraph>Stay informed about new available artwork</Paragraph>
         <Paragraph>Inspiration and the creative process:</Paragraph>
         <a
           href="https://www.instagram.com/paintingdept/"
