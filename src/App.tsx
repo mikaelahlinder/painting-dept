@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import ig from './instagram-logo.png'
+import logo from './pd_logo_web.png'
 import welcome from './welcome.jpg'
 
 const Container = styled.div`
@@ -17,15 +18,13 @@ const Container = styled.div`
   }
 `
 
-const Logo = styled.h1`
-  font-family: impact;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 10px;
-  text-align: center;
-  letter-spacing: 6px;
-  font-size: 1.2rem;
-  border-bottom: 2px solid #000;
+const Logo = styled.img`
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+`
+const Divider = styled.hr`
+  border: 1px solid #000;
 `
 
 const Image = styled.div`
@@ -85,7 +84,8 @@ const Paragraph = styled.p`
 function App() {
   return (
     <Container>
-      <Logo>PAINTING DEPT.</Logo>
+      <Logo src={logo} alt="" />
+      <Divider />
       <Image>
         <Heading2>Rich, textured art</Heading2>
         <Heading3>Launching November</Heading3>
